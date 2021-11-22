@@ -1,3 +1,32 @@
 My first project
 My tried
 Success
+Started by user anonymous
+
+Checkout:workspace / /Users/Shared/Jenkins/Home/jobs/test/workspace - hudson.remoting.LocalChannel@1c0a0847
+Using strategy: Default
+Checkout:workspace / /Users/Shared/Jenkins/Home/jobs/test/workspace - hudson.remoting.LocalChannel@1c0a0847
+Cloning the remote Git repository
+Cloning repository origin
+Error trying to determine the git version: Error performing command: /usr/local/git/ --version
+Cannot run program "/usr/local/git/" (in directory "/Users/Shared/Jenkins/Home/jobs/test/workspace"): error=13, Permission denied
+Assuming 1.6
+ERROR: Error cloning remote repo 'origin' : Could not clone git@coding-squirrel.de:iRest.git
+ERROR: Cause: Error performing command: /usr/local/git/ clone -o origin git@coding-squirrel.de:iRest.git /Users/Shared/Jenkins/Home/jobs/test/workspace
+Cannot run program "/usr/local/git/": error=13, Permission denied
+Trying next repository
+ERROR: Could not clone repository
+FATAL: Could not clone
+hudson.plugins.git.GitException: Could not clone
+    at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:1046)
+    at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:972)
+    at hudson.FilePath.act(FilePath.java:783)
+    at hudson.FilePath.act(FilePath.java:765)
+    at hudson.plugins.git.GitSCM.checkout(GitSCM.java:972)
+    at hudson.model.AbstractProject.checkout(AbstractProject.java:1195)
+    at hudson.model.AbstractBuild$AbstractRunner.checkout(AbstractBuild.java:571)
+    at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:460)
+    at hudson.model.Run.run(Run.java:1404)
+    at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+    at hudson.model.ResourceController.execute(ResourceController.java:88)
+    at hudson.model.Executor.run(Executor.java:238)
